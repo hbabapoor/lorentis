@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LORENTIS — Premium Bathrooms &amp; Cladding | Australia</title>
+<meta name="description" content="LORENTIS delivers premium PVC cladding, designer vanities, LED mirrors and smart toilets direct to Australian homes. Free shipping on orders over A$500.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--c-charcoal:#1C1C1E;--c-ink:#2D2D30;--c-stone:#4A4A52;--c-mist:#9898A6;--c-silver:#C8C8D0;--c-cloud:#EEEEF2;--c-snow:#F7F7F9;--c-white:#FFFFFF;--c-gold:#B8914A;--c-gold-light:#E8D5A8;--c-gold-pale:#F9F4EA;--c-accent:#B8914A;--c-accent-dk:#8C6A2F;--c-success:#2E7D5A;--c-danger:#C0392B;--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:14px;--radius-xl:20px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.10);--shadow-lg:0 8px 40px rgba(0,0,0,.14);--max-w:1280px;--header-h:72px;--transition:0.22s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--c-charcoal);background:var(--c-white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+ul{list-style:none}
+.container{max-width:var(--max-w);margin-inline:auto;padding-inline:clamp(1rem,4vw,2.5rem)}
+.gold-line{display:inline-block;width:40px;height:2px;background:var(--c-gold);margin-bottom:.75rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2em .65em;border-radius:30px}
+.tag-sale{background:#FEE;color:var(--c-danger)}
+.tag-new{background:#EEF6FF;color:#1565C0}
+.tag-pop{background:var(--c-gold-pale);color:var(--c-gold)}
+.tag-prem{background:var(--c-charcoal);color:var(--c-gold-light)}
+.tag-best{background:#E8F5E9;color:var(--c-success)}
+
+/* HEADER */
+#site-header{position:sticky;top:0;z-index:100;height:var(--header-h);background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--c-cloud);display:flex;align-items:center;transition:box-shadow var(--transition)}
+#site-header.scrolled{box-shadow:var(--shadow-md)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo{display:flex;align-items:center;gap:.75rem}
+.logo-mark{width:36px;height:36px;background:var(--c-charcoal);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.logo-text{font-family:var(--font-display);font-size:1.55rem;font-weight:500;letter-spacing:.06em}
+.logo-tagline{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--c-mist);display:block;margin-top:-4px}
+nav.desktop-nav{display:flex;align-items:center;gap:2rem}
+nav.desktop-nav a{font-size:.85rem;font-weight:500;letter-spacing:.04em;color:var(--c-stone);transition:color var(--transition);position:relative}
+nav.desktop-nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--c-gold);transition:width var(--transition)}
+nav.desktop-nav a:hover{color:var(--c-charcoal)}
+nav.desktop-nav a:hover::after{width:100%}
+.cart-btn{position:relative;display:flex;align-items:center;gap:.4rem;background:var(--c-charcoal);color:var(--c-white);padding:.5rem 1.1rem;border-radius:30px;font-size:.8rem;font-weight:500;letter-spacing:.04em;transition:background var(--transition)}
+.cart-btn:hover{background:var(--c-ink)}
+.cart-count{position:absolute;top:-5px;right:-5px;background:var(--c-gold);color:var(--c-white);width:18px;height:18px;border-radius:50%;font-size:.65rem;font-weight:700;display:none;align-items:center;justify-content:center}
+.cart-count.visible{display:flex}
+
+/* HERO */
+#hero{min-height:min(640px,88vh);background:var(--c-charcoal);display:grid;grid-template-columns:1fr 1fr;align-items:center;overflow:hidden;position:relative}
+.hero-content{padding:clamp(3rem,8vw,7rem) clamp(1.5rem,5vw,4rem)}
+.hero-eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c-gold);margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--c-gold)}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:300;color:var(--c-white);line-height:1.1;margin-bottom:1.5rem}
+.hero-title em{font-style:italic;color:var(--c-gold)}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.7;max-width:420px;margin-bottom:2.5rem}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--c-gold);color:var(--c-white);padding:.85rem 2rem;border-radius:30px;font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:background var(--transition),transform var(--transition);display:inline-block}
+.btn-primary:hover{background:var(--c-accent-dk);transform:translateY(-1px)}
+.btn-outline-light{border:1.5px solid rgba(255,255,255,.35);color:var(--c-white);padding:.85rem 2rem;border-radius:30px;font-size:.85rem;font-weight:500;letter-spacing:.04em;transition:border-color var(--transition),background var(--transition);display:inline-block}
+.btn-outline-light:hover{border-color:var(--c-white);background:rgba(255,255,255,.08)}
+.hero-visual{height:100%;min-height:500px;background:linear-gradient(135deg,#2a2a2e 0%,#1a1a1e 50%,#0d0d10 100%);display:flex;align-items:flex-end;justify-content:flex-start;padding:2rem;position:relative}
+.hero-visual-decoration{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.06}
+.hero-visual-decoration svg{width:70%;height:70%}
+.hero-stat-strip{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.45);backdrop-filter:blur(8px);display:flex;border-top:1px solid rgba(255,255,255,.08)}
+.hero-stat{flex:1;padding:1.25rem 1.5rem;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.hero-stat:last-child{border-right:none}
+.hero-stat-num{font-family:var(--font-display);font-size:1.8rem;color:var(--c-gold)}
+.hero-stat-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:.2rem}
+
+/* TRUST BAR */
+#trust-bar{background:var(--c-snow);border-bottom:1px solid var(--c-cloud);padding:1.1rem 0}
+.trust-items{display:flex;align-items:center;justify-content:center;gap:clamp(1.5rem,4vw,3.5rem);flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.6rem;font-size:.8rem;color:var(--c-stone);font-weight:500}
+.trust-item i{color:var(--c-gold);font-size:1.05rem}
+
+/* SECTION HEADER */
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.2;margin-bottom:.75rem}
+.section-header p{color:var(--c-stone);max-width:520px;margin-inline:auto;font-size:.95rem}
+
+/* CATALOGUE */
+#catalogue{padding:5rem 0}
+.cat-tabs{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
+.cat-tab{display:flex;align-items:center;gap:.5rem;padding:.6rem 1.4rem;border-radius:30px;font-size:.82rem;font-weight:500;border:1.5px solid var(--c-cloud);color:var(--c-stone);transition:all var(--transition)}
+.cat-tab:hover{border-color:var(--c-gold);color:var(--c-gold)}
+.cat-tab.active{background:var(--c-charcoal);border-color:var(--c-charcoal);color:var(--c-white)}
+.cat-tab i{font-size:1rem}
+
+/* PRODUCT GRID */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.product-card{background:var(--c-white);border:1px solid var(--c-cloud);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow var(--transition),transform var(--transition);cursor:pointer;position:relative}
+.product-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.product-img-wrap{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--c-snow)}
+.product-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+.product-card:hover .product-img-wrap img{transform:scale(1.04)}
+.product-img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--c-cloud) 0%,var(--c-snow) 100%);gap:.5rem}
+.product-img-placeholder i{font-size:2.5rem;color:var(--c-silver)}
+.product-img-placeholder span{font-size:.75rem;color:var(--c-mist)}
+.product-badge{position:absolute;top:.75rem;left:.75rem;z-index:1}
+.product-stock-low{position:absolute;top:.75rem;right:.75rem;z-index:1;background:rgba(0,0,0,.55);color:var(--c-white);font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2em .6em;border-radius:20px}
+.product-wishlist{position:absolute;bottom:.75rem;right:.75rem;z-index:1;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.88);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--c-mist);transition:color var(--transition),background var(--transition);border:1px solid rgba(0,0,0,.06)}
+.product-wishlist:hover{color:var(--c-danger);background:var(--c-white)}
+.product-wishlist.active{color:var(--c-danger)}
+.product-info{padding:1.1rem 1.25rem 1.25rem}
+.product-category{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c-mist);margin-bottom:.35rem}
+.product-name{font-size:1rem;font-weight:600;color:var(--c-charcoal);margin-bottom:.1rem}
+.product-subtitle{font-size:.82rem;color:var(--c-stone);margin-bottom:.75rem}
+.product-pricing{display:flex;align-items:baseline;gap:.5rem;margin-bottom:.4rem}
+.price-current{font-family:var(--font-display);font-size:1.5rem;font-weight:500;color:var(--c-charcoal)}
+.price-was{font-size:.85rem;color:var(--c-mist);text-decoration:line-through}
+.price-unit{font-size:.75rem;color:var(--c-mist);margin-left:.25rem}
+.price-sale{color:var(--c-danger)}
+.price-gst{font-size:.7rem;color:var(--c-mist);display:block;margin-bottom:.85rem}
+.product-actions{display:flex;gap:.5rem}
+.btn-cart{flex:1;background:var(--c-charcoal);color:var(--c-white);padding:.65rem 1rem;border-radius:var(--radius-md);font-size:.82rem;font-weight:500;letter-spacing:.03em;transition:background var(--transition);display:flex;align-items:center;justify-content:center;gap:.4rem}
+.btn-cart:hover{background:var(--c-ink)}
+.btn-cart:disabled{background:var(--c-silver);cursor:not-allowed}
+.btn-view{padding:.65rem 1rem;border-radius:var(--radius-md);border:1.5px solid var(--c-cloud);color:var(--c-stone);font-size:.82rem;font-weight:500;transition:border-color var(--transition),color var(--transition)}
+.btn-view:hover{border-color:var(--c-gold);color:var(--c-gold)}
+
+/* MODAL */
+#modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(20,20,22,.6);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:1.5rem}
+#modal-overlay.open{display:flex}
+#product-modal{background:var(--c-white);border-radius:var(--radius-xl);width:min(900px,100%);max-height:90vh;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;box-shadow:var(--shadow-lg);position:relative}
+.modal-close{position:absolute;top:1rem;right:1rem;z-index:10;width:36px;height:36px;border-radius:50%;background:var(--c-cloud);color:var(--c-charcoal);font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background var(--transition)}
+.modal-close:hover{background:var(--c-silver)}
+.modal-gallery{position:relative;background:var(--c-snow);border-radius:var(--radius-xl) 0 0 var(--radius-xl);overflow:hidden}
+.modal-gallery-main{aspect-ratio:1;overflow:hidden;background:var(--c-snow);display:flex;align-items:center;justify-content:center}
+.modal-gallery-main img{width:100%;height:100%;object-fit:cover}
+.modal-gallery-thumbs{display:flex;gap:.5rem;padding:.75rem;overflow-x:auto}
+.modal-thumb{width:60px;height:60px;border-radius:var(--radius-sm);overflow:hidden;border:2px solid transparent;cursor:pointer;flex-shrink:0;transition:border-color var(--transition)}
+.modal-thumb.active{border-color:var(--c-gold)}
+.modal-thumb img{width:100%;height:100%;object-fit:cover}
+.modal-details{padding:2rem 1.75rem;overflow-y:auto}
+.modal-cat{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-gold);margin-bottom:.5rem}
+.modal-name{font-family:var(--font-display);font-size:1.9rem;font-weight:400;margin-bottom:.25rem;line-height:1.2}
+.modal-sub{color:var(--c-stone);margin-bottom:1.25rem}
+.modal-price{font-family:var(--font-display);font-size:2.2rem;font-weight:500}
+.modal-price-was{font-size:.9rem;color:var(--c-mist);text-decoration:line-through;margin-left:.5rem}
+.modal-price-info{font-size:.75rem;color:var(--c-stone);margin-top:.25rem;margin-bottom:1.25rem}
+.modal-desc{font-size:.9rem;color:var(--c-stone);line-height:1.7;margin-bottom:1.25rem}
+.modal-features{margin-bottom:1.25rem}
+.modal-features h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c-mist);margin-bottom:.6rem}
+.modal-features li{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--c-stone);padding:.25rem 0}
+.modal-features li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--c-gold);flex-shrink:0}
+.modal-meta{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1rem;margin-bottom:1.25rem;font-size:.8rem}
+.modal-meta-item span:first-child{color:var(--c-mist);display:block}
+.modal-meta-item span:last-child{font-weight:500}
+.modal-variant-group{margin-bottom:1rem}
+.modal-variant-group label{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--c-mist);display:block;margin-bottom:.4rem}
+.variant-options{display:flex;flex-wrap:wrap;gap:.35rem}
+.variant-btn{padding:.3rem .8rem;border-radius:20px;font-size:.78rem;border:1.5px solid var(--c-cloud);color:var(--c-stone);transition:all var(--transition)}
+.variant-btn:hover{border-color:var(--c-gold);color:var(--c-gold)}
+.variant-btn.active{background:var(--c-charcoal);border-color:var(--c-charcoal);color:var(--c-white)}
+.qty-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.qty-label{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--c-mist)}
+.qty-ctrl{display:flex;align-items:center;gap:.5rem;border:1.5px solid var(--c-cloud);border-radius:30px;overflow:hidden}
+.qty-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--c-charcoal);transition:background var(--transition)}
+.qty-btn:hover{background:var(--c-snow)}
+.qty-input{width:42px;text-align:center;font-size:.95rem;font-weight:600;border:none;outline:none;background:none;font-family:inherit}
+.btn-add-to-cart{width:100%;background:var(--c-charcoal);color:var(--c-white);padding:.95rem;border-radius:30px;font-size:.9rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.6rem;transition:background var(--transition),transform var(--transition);margin-bottom:.75rem}
+.btn-add-to-cart:hover{background:var(--c-gold);transform:translateY(-1px)}
+.btn-add-to-cart:disabled{background:var(--c-silver);transform:none;cursor:not-allowed}
+.modal-warranty{text-align:center;font-size:.75rem;color:var(--c-mist);display:flex;align-items:center;justify-content:center;gap:.35rem}
+.modal-warranty i{color:var(--c-gold)}
+
+/* WHY US */
+#why-us{padding:5rem 0;background:var(--c-charcoal)}
+#why-us .section-header h2{color:var(--c-white)}
+#why-us .section-header p{color:rgba(255,255,255,.55)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem}
+.why-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:2rem 1.5rem;transition:background var(--transition)}
+.why-card:hover{background:rgba(255,255,255,.09)}
+.why-icon{width:48px;height:48px;border-radius:50%;background:rgba(184,145,74,.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--c-gold);margin-bottom:1.25rem}
+.why-card h3{font-size:1rem;font-weight:600;color:var(--c-white);margin-bottom:.5rem}
+.why-card p{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.6}
+
+/* SHOWROOM */
+#showroom{padding:5rem 0;background:var(--c-gold-pale)}
+.showroom-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.showroom-text h2{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;margin-bottom:1rem}
+.showroom-text p{color:var(--c-stone);margin-bottom:1.5rem;line-height:1.7}
+.showroom-details{display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem}
+.showroom-detail{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem}
+.showroom-detail i{color:var(--c-gold);margin-top:2px;flex-shrink:0}
+.btn-dark{display:inline-flex;align-items:center;gap:.5rem;background:var(--c-charcoal);color:var(--c-white);padding:.85rem 2rem;border-radius:30px;font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:background var(--transition)}
+.btn-dark:hover{background:var(--c-ink)}
+.showroom-img{aspect-ratio:4/3;border-radius:var(--radius-xl);overflow:hidden;background:linear-gradient(135deg,var(--c-gold-light),var(--c-gold-pale));box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center}
+.showroom-img i{font-size:5rem;color:var(--c-gold);opacity:.4}
+
+/* TESTIMONIALS */
+#testimonials{padding:5rem 0}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.testimonial-card{background:var(--c-snow);border-radius:var(--radius-lg);padding:1.75rem;border:1px solid var(--c-cloud)}
+.testimonial-stars{color:var(--c-gold);font-size:.9rem;margin-bottom:1rem;letter-spacing:.05em}
+.testimonial-text{font-size:.9rem;color:var(--c-stone);line-height:1.7;margin-bottom:1.25rem;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:.75rem}
+.testimonial-avatar{width:38px;height:38px;border-radius:50%;background:var(--c-charcoal);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:var(--c-gold-light);flex-shrink:0}
+.testimonial-name{font-size:.85rem;font-weight:600}
+.testimonial-location{font-size:.75rem;color:var(--c-mist)}
+.testimonial-product{font-size:.7rem;color:var(--c-gold);margin-top:.15rem}
+
+/* NEWSLETTER */
+#newsletter{padding:4rem 0;background:var(--c-charcoal);text-align:center}
+#newsletter h2{font-family:var(--font-display);font-size:2rem;color:var(--c-white);margin-bottom:.75rem;font-weight:400}
+#newsletter p{color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:2rem}
+.newsletter-form{display:flex;max-width:440px;margin-inline:auto;gap:.5rem}
+.newsletter-form input{flex:1;padding:.85rem 1.25rem;border-radius:30px;border:none;outline:none;font-size:.9rem;background:rgba(255,255,255,.1);color:var(--c-white);font-family:inherit}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.35)}
+.newsletter-form button{background:var(--c-gold);color:var(--c-white);padding:.85rem 1.75rem;border-radius:30px;font-size:.85rem;font-weight:600;transition:background var(--transition)}
+.newsletter-form button:hover{background:var(--c-accent-dk)}
+
+/* FOOTER */
+footer{background:#111114;color:rgba(255,255,255,.55);padding:4rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+.footer-brand .logo-text{color:var(--c-white)}
+.footer-brand p{font-size:.82rem;line-height:1.7;margin:1rem 0 .5rem}
+.footer-brand .abn{font-size:.72rem;color:rgba(255,255,255,.3)}
+.footer-col h4{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:1rem}
+.footer-col ul li{margin-bottom:.5rem}
+.footer-col a{font-size:.85rem;transition:color var(--transition)}
+.footer-col a:hover{color:var(--c-white)}
+.footer-social{display:flex;gap:.75rem;margin-top:1rem}
+.social-link{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:border-color var(--transition),color var(--transition)}
+.social-link:hover{border-color:var(--c-gold);color:var(--c-gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.78rem}
+.footer-bottom a:hover{color:var(--c-white)}
+
+/* CART */
+#cart-sidebar{position:fixed;top:0;right:-480px;width:440px;max-width:100%;height:100%;z-index:300;background:var(--c-white);box-shadow:-4px 0 40px rgba(0,0,0,.15);transition:right 0.35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+#cart-sidebar.open{right:0}
+.cart-backdrop{display:none;position:fixed;inset:0;z-index:299;background:rgba(0,0,0,.4);backdrop-filter:blur(3px)}
+.cart-backdrop.visible{display:block}
+.cart-header{padding:1.5rem;border-bottom:1px solid var(--c-cloud);display:flex;align-items:center;justify-content:space-between}
+.cart-header h2{font-size:1.1rem;font-weight:600}
+.cart-items{flex:1;overflow-y:auto;padding:1rem 1.5rem}
+.cart-empty{text-align:center;padding:3rem 1rem;color:var(--c-mist)}
+.cart-empty i{font-size:3rem;display:block;margin-bottom:1rem}
+.cart-item{display:grid;grid-template-columns:70px 1fr auto;gap:.75rem;align-items:start;padding:1rem 0;border-bottom:1px solid var(--c-cloud)}
+.cart-item-img{width:70px;height:70px;border-radius:var(--radius-md);overflow:hidden;background:var(--c-snow);display:flex;align-items:center;justify-content:center}
+.cart-item-img img{width:100%;height:100%;object-fit:cover}
+.cart-item-name{font-size:.88rem;font-weight:600;margin-bottom:.2rem}
+.cart-item-sub{font-size:.78rem;color:var(--c-mist)}
+.cart-item-price{font-size:.9rem;font-weight:600;text-align:right}
+.cart-item-remove{font-size:.75rem;color:var(--c-mist);display:block;margin-top:.35rem;cursor:pointer;text-align:right}
+.cart-item-remove:hover{color:var(--c-danger)}
+.cart-footer{padding:1.5rem;border-top:1px solid var(--c-cloud)}
+.cart-shipping-note{font-size:.78rem;color:var(--c-success);margin-bottom:.75rem}
+.cart-total-row{display:flex;justify-content:space-between;font-size:.88rem;padding:.35rem 0}
+.cart-total-row.grand{font-weight:700;font-size:1rem;border-top:1px solid var(--c-cloud);margin-top:.5rem;padding-top:.75rem}
+.btn-checkout{width:100%;background:var(--c-gold);color:var(--c-white);padding:1rem;border-radius:30px;font-size:.9rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:background var(--transition);margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.btn-checkout:hover{background:var(--c-accent-dk)}
+.cart-secure{text-align:center;font-size:.72rem;color:var(--c-mist);display:flex;align-items:center;justify-content:center;gap:.3rem}
+
+/* TOAST */
+#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(80px);background:var(--c-charcoal);color:var(--c-white);padding:.85rem 1.5rem;border-radius:30px;font-size:.85rem;font-weight:500;display:flex;align-items:center;gap:.5rem;box-shadow:var(--shadow-lg);z-index:400;transition:transform 0.35s cubic-bezier(.4,0,.2,1);white-space:nowrap}
+#toast.show{transform:translateX(-50%) translateY(0)}
+#toast i{color:var(--c-gold)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  #hero{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  #product-modal{grid-template-columns:1fr}
+  .modal-gallery{border-radius:var(--radius-xl) var(--radius-xl) 0 0}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .showroom-inner{grid-template-columns:1fr}
+  .showroom-img{max-height:280px}
+}
+@media(max-width:640px){
+  nav.desktop-nav{display:none}
+  .footer-grid{grid-template-columns:1fr}
+  .newsletter-form{flex-direction:column}
+  #cart-sidebar{width:100%}
+}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.animate-in{animation:fadeInUp .45s ease both}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+            <path d="M10 2 L18 7 L18 13 L10 18 L2 13 L2 7 Z" fill="none" stroke="#B8914A" stroke-width="1.5"/>
+            <circle cx="10" cy="10" r="3" fill="#B8914A"/>
+          </svg>
+        </div>
+        <div>
+          <span class="logo-text">LORENTIS</span>
+          <span class="logo-tagline">Australian Living</span>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#catalogue">Products</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="mailto:sales@lorentis.com.au">Contact</a>
+      </nav>
+      <div>
+        <button class="cart-btn" onclick="openCart()">
+          <i class="ti ti-shopping-cart"></i> Cart
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Premium Australian Bathrooms</p>
+    <h1 class="hero-title">Elevate your<br><em>living spaces</em><br>effortlessly</h1>
+    <p class="hero-sub">From designer vanities and smart toilets to LED mirrors and premium PVC cladding — curated products for the modern Australian home. Shipped nationwide.</p>
+    <div class="hero-ctas">
+      <a href="#catalogue" class="btn-primary">Shop All Products</a>
+      <a href="#why-us" class="btn-outline-light">Why LORENTIS</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-visual-decoration">
+      <svg viewBox="0 0 200 200" fill="none">
+        <path d="M100 10 L190 55 L190 145 L100 190 L10 145 L10 55 Z" stroke="#B8914A" stroke-width="1" fill="none"/>
+        <path d="M100 30 L170 67 L170 133 L100 170 L30 133 L30 67 Z" stroke="#B8914A" stroke-width=".5" fill="none"/>
+        <circle cx="100" cy="100" r="30" stroke="#B8914A" stroke-width=".5" fill="none"/>
+      </svg>
+    </div>
+    <div class="hero-stat-strip">
+      <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Happy Customers</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">25yr</div><div class="hero-stat-label">Cladding Warranty</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">A$500</div><div class="hero-stat-label">Free Shipping</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Aussie Stock</div></div>
+    </div>
+  </div>
+</section>
+
+<div id="trust-bar">
+  <div class="container">
+    <ul class="trust-items">
+      <li class="trust-item"><i class="ti ti-truck"></i> Free Shipping over A$500</li>
+      <li class="trust-item"><i class="ti ti-shield-check"></i> Australian Stock — No Waiting</li>
+      <li class="trust-item"><i class="ti ti-award"></i> Manufacturer Warranty Included</li>
+      <li class="trust-item"><i class="ti ti-lock"></i> Secure Checkout</li>
+      <li class="trust-item"><i class="ti ti-building-store"></i> ABN 12 345 678 901</li>
+      <li class="trust-item"><i class="ti ti-phone"></i> 1800 567 890</li>
+    </ul>
+  </div>
+</div>
+
+<section id="catalogue">
+  <div class="container">
+    <div class="section-header">
+      <span class="gold-line"></span>
+      <h2>Our Collections</h2>
+      <p>Handpicked products designed for the Australian climate and lifestyle, with more ranges being added regularly.</p>
+    </div>
+    <div class="cat-tabs">
+      <button class="cat-tab active" data-cat="all" onclick="filterCategory('all')"><i class="ti ti-layout-grid"></i> All Products</button>
+      <button class="cat-tab" data-cat="pvc-cladding" onclick="filterCategory('pvc-cladding')"><i class="ti ti-building"></i> PVC Cladding</button>
+      <button class="cat-tab" data-cat="vanity" onclick="filterCategory('vanity')"><i class="ti ti-droplet"></i> Vanity Units</button>
+      <button class="cat-tab" data-cat="led-mirror" onclick="filterCategory('led-mirror')"><i class="ti ti-brightness"></i> LED Mirrors</button>
+      <button class="cat-tab" data-cat="smart-toilets" onclick="filterCategory('smart-toilets')"><i class="ti ti-refresh"></i> Smart Toilets</button>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</section>
+
+<section id="why-us">
+  <div class="container">
+    <div class="section-header">
+      <span class="gold-line"></span>
+      <h2>Why Australians Choose LORENTIS</h2>
+      <p>We combine quality products, transparent pricing and genuine Australian customer service.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon"><i class="ti ti-certificate"></i></div><h3>Manufacturer Warranties</h3><p>Every product ships with its full manufacturer warranty — from 5 years on LED mirrors to 25 years on PVC cladding.</p></div>
+      <div class="why-card"><div class="why-icon"><i class="ti ti-truck-delivery"></i></div><h3>Nationwide Delivery</h3><p>We deliver to every Australian state and territory. Metro orders in 3–7 business days, regional in 7–14 days.</p></div>
+      <div class="why-card"><div class="why-icon"><i class="ti ti-headset"></i></div><h3>Real Expert Support</h3><p>Speak to our Australian product experts by phone or email before you buy. We help you choose the right product.</p></div>
+      <div class="why-card"><div class="why-icon"><i class="ti ti-package"></i></div><h3>Local Stock — No Delays</h3><p>All products are held in our Australian warehouse. No waiting weeks for overseas shipments or paying import duties.</p></div>
+      <div class="why-card"><div class="why-icon"><i class="ti ti-receipt-tax"></i></div><h3>GST Inclusive Pricing</h3><p>Every price you see includes 10% GST. No surprises at checkout — what you see is exactly what you pay.</p></div>
+      <div class="why-card"><div class="why-icon"><i class="ti ti-refresh"></i></div><h3>Easy Returns</h3><p>Changed your mind? We offer hassle-free returns within 30 days on all stocked items in original condition.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="showroom">
+  <div class="container">
+    <div class="showroom-inner">
+      <div class="showroom-text">
+        <span class="gold-line"></span>
+        <h2>Visit Our Melbourne Showroom</h2>
+        <p>See our products in person before you buy. Our Dandenong South showroom features full bathroom displays — vanities, mirrors, smart toilets and cladding all on display.</p>
+        <ul class="showroom-details">
+          <li class="showroom-detail"><i class="ti ti-map-pin"></i><span>Unit 4 / 28 Commerce Drive, Dandenong South VIC 3175</span></li>
+          <li class="showroom-detail"><i class="ti ti-clock"></i><span>Mon–Fri 8am–5pm · Sat 9am–2pm · Closed Sunday</span></li>
+          <li class="showroom-detail"><i class="ti ti-phone"></i><a href="tel:1800567890">1800 567 890</a></li>
+          <li class="showroom-detail"><i class="ti ti-mail"></i><a href="mailto:sales@lorentis.com.au">sales@lorentis.com.au</a></li>
+        </ul>
+        <a href="https://maps.google.com/?q=28+Commerce+Drive,+Dandenong+South+VIC" target="_blank" class="btn-dark"><i class="ti ti-map-2"></i> Get Directions</a>
+      </div>
+      <div class="showroom-img"><i class="ti ti-building-store"></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="gold-line"></span>
+      <h2>What Our Customers Say</h2>
+      <p>Real reviews from real Australians who've transformed their homes with LORENTIS.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The Aria vanity arrived perfectly packaged and looks even better in person than online. The quality is outstanding for the price. Installation was straightforward. Couldn't be happier."</p><div class="testimonial-author"><div class="testimonial-avatar">SK</div><div><div class="testimonial-name">Sarah K.</div><div class="testimonial-location">Brighton, VIC</div><div class="testimonial-product">Aria Wall-Hung Vanity 900mm</div></div></div></article>
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"We clad our entire Queenslander with the Timber Look V-Groove panels. The result is incredible — so realistic, and we haven't had to do a single thing to maintain them in 18 months."</p><div class="testimonial-author"><div class="testimonial-avatar">MR</div><div><div class="testimonial-name">Mark R.</div><div class="testimonial-location">Paddington, QLD</div><div class="testimonial-product">Timber Look V-Groove Panels</div></div></div></article>
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The AquaComfort S3 Pro is an absolute game changer. Once you've used a bidet toilet you can never go back. The auto flush and night light are the little details that make a big difference."</p><div class="testimonial-author"><div class="testimonial-avatar">JT</div><div><div class="testimonial-name">James T.</div><div class="testimonial-location">Mosman, NSW</div><div class="testimonial-product">AquaComfort S3 Pro Smart Toilet</div></div></div></article>
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The Lux Pro mirror completely transformed our ensuite. The colour temperature adjustment is perfect — warm light in the evenings, cool light for getting ready. Support team was super responsive too."</p><div class="testimonial-author"><div class="testimonial-avatar">AL</div><div><div class="testimonial-name">Amanda L.</div><div class="testimonial-location">Subiaco, WA</div><div class="testimonial-product">Lux Pro Backlit Mirror 900×700</div></div></div></article>
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Very impressed with how well the Shiplap Shadow Line cladding performs in a coastal environment. No warping, no cracking, still looking sharp after 18 months."</p><div class="testimonial-author"><div class="testimonial-avatar">BM</div><div><div class="testimonial-name">Brett M.</div><div class="testimonial-location">Manly, NSW</div><div class="testimonial-product">Shiplap Shadow Line Cladding</div></div></div></article>
+      <article class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Ordered the Nova vanity and had a small transit damage issue. Lorentis sorted a replacement panel the very next day without any hassle. Great product and even better customer service."</p><div class="testimonial-author"><div class="testimonial-avatar">CP</div><div><div class="testimonial-name">Claire P.</div><div class="testimonial-location">Toorak, VIC</div><div class="testimonial-product">Nova Freestanding Vanity</div></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter">
+  <div class="container">
+    <h2>Stay in the Loop</h2>
+    <p>New products, trade pricing and exclusive offers — delivered to your inbox. No spam, ever.</p>
+    <form class="newsletter-form" id="nl-form" onsubmit="handleNewsletter(event)">
+      <input type="email" id="nl-email" placeholder="your@email.com.au">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-mark"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 2 L18 7 L18 13 L10 18 L2 13 L2 7 Z" fill="none" stroke="#B8914A" stroke-width="1.5"/><circle cx="10" cy="10" r="3" fill="#B8914A"/></svg></div><span class="logo-text">LORENTIS</span></div>
+        <p>Premium bathroom products and cladding systems for Australian homes. Quality you can trust, delivered nationwide.</p>
+        <p class="abn">ABN 12 345 678 901 · All prices include 10% GST</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="ti ti-brand-facebook"></i></a>
+          <a href="#" class="social-link"><i class="ti ti-brand-instagram"></i></a>
+          <a href="#" class="social-link"><i class="ti ti-brand-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Products</h4><ul><li><a href="#" onclick="filterCategory('pvc-cladding');return false">PVC Cladding</a></li><li><a href="#" onclick="filterCategory('vanity');return false">Vanity Units</a></li><li><a href="#" onclick="filterCategory('led-mirror');return false">LED Mirrors</a></li><li><a href="#" onclick="filterCategory('smart-toilets');return false">Smart Toilets</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#why-us">About Us</a></li><li><a href="#showroom">Our Showroom</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="mailto:sales@lorentis.com.au">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="#">Shipping Info</a></li><li><a href="#">Returns Policy</a></li><li><a href="#">Warranty Claims</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LORENTIS Pty Ltd · All rights reserved · ABN 12 345 678 901</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div id="product-modal">
+    <button class="modal-close" onclick="closeModal()"><i class="ti ti-x"></i></button>
+  </div>
+</div>
+
+<!-- CART -->
+<div class="cart-backdrop" id="cart-backdrop" onclick="closeCart()"></div>
+<aside id="cart-sidebar">
+  <div class="cart-header">
+    <h2><i class="ti ti-shopping-cart"></i> Your Cart</h2>
+    <button onclick="closeCart()"><i class="ti ti-x" style="font-size:1.25rem;color:var(--c-stone)"></i></button>
+  </div>
+  <div class="cart-items" id="cart-items"><div class="cart-empty"><i class="ti ti-shopping-cart"></i><p>Your cart is empty</p></div></div>
+  <div class="cart-footer">
+    <p class="cart-shipping-note" id="shipping-note" style="display:none"></p>
+    <div class="cart-totals">
+      <div class="cart-total-row"><span>Subtotal</span><span id="cart-subtotal">A$0</span></div>
+      <div class="cart-total-row"><span>Shipping</span><span id="cart-shipping">A$0</span></div>
+      <div class="cart-total-row"><span>GST (included)</span><span id="cart-gst">A$0</span></div>
+      <div class="cart-total-row grand"><span>Total (AUD)</span><span id="cart-total">A$0</span></div>
+    </div>
+    <button class="btn-checkout" onclick="goToCheckout()"><i class="ti ti-lock"></i> Secure Checkout</button>
+    <p class="cart-secure"><i class="ti ti-shield-check"></i> SSL encrypted · Safe &amp; secure payment</p>
+  </div>
+</aside>
+
+<div id="toast"><i class="ti ti-check"></i> Item added</div>
+
+<script>
+/* ============================================================
+   LORENTIS PRODUCT DATA
+   ✏️  EDIT THIS SECTION TO UPDATE PRICES, STOCK & PRODUCTS
+   ============================================================ */
+
+const CATEGORIES = {
+  "pvc-cladding":  { label:"PVC Cladding",   icon:"ti-building"   },
+  "vanity":        { label:"Vanity Units",    icon:"ti-droplet"    },
+  "led-mirror":    { label:"LED Mirrors",     icon:"ti-brightness" },
+  "smart-toilets": { label:"Smart Toilets",   icon:"ti-refresh"    }
+};
+
+const PRODUCTS = [
+
+  /* ── PVC CLADDING ── */
+  {
+    id:"clad-001", active:true, category:"pvc-cladding",
+    name:"Coastal Weatherboard Classic", subtitle:"180mm Chamfer Profile",
+    description:"UV-stabilised, bushfire-resistant PVC weatherboard perfect for coastal and inland builds. Lightweight, termite-proof and maintenance-free. Available in 6m lengths.",
+    features:["Bushfire BAL-29 rated","UV-stabilised coating","Termite & rot proof","Easy clip-lock install","6m board lengths"],
+    price:189, salePrice:null, unit:"per board", stock:148, sku:"LOR-CLAD-001", badge:null,
+    images:[], colours:["Arctic White","Sandstone","Ironbark Grey","Charcoal"], warranty:"25 years"
+  },
+  {
+    id:"clad-002", active:true, category:"pvc-cladding",
+    name:"Shiplap Shadow Line", subtitle:"130mm Horizontal Profile",
+    description:"Contemporary shiplap profile delivering clean shadow lines and a modern architectural finish. Ideal for feature walls, extensions and new builds.",
+    features:["Deep shadow line profile","Zero formaldehyde","Fire retardant","Pre-primed surface","Paintable any colour"],
+    price:215, salePrice:179, unit:"per board", stock:72, sku:"LOR-CLAD-002", badge:"On Sale",
+    images:[], colours:["Primed White","Ash Grey","Night Sky"], warranty:"25 years"
+  },
+  {
+    id:"clad-003", active:true, category:"pvc-cladding",
+    name:"Timber Look V-Groove Panel", subtitle:"Woodgrain Embossed",
+    description:"Authentic timber look without the upkeep. Embossed woodgrain texture in popular Australian species tones. Perfect for interior feature walls and exterior facades.",
+    features:["Realistic woodgrain emboss","No painting required","Insect & moisture proof","12mm panel thickness","V-groove jointing"],
+    price:249, salePrice:null, unit:"per panel (2.4m²)", stock:34, sku:"LOR-CLAD-003", badge:"Popular",
+    images:[], colours:["Blackbutt","Spotted Gum","Merbau","Brushbox"], warranty:"20 years"
+  },
+
+  /* ── VANITY UNITS ── */
+  {
+    id:"van-001", active:true, category:"vanity",
+    name:"Aria Wall-Hung Vanity", subtitle:"600mm — Matte White",
+    description:"Floating wall-hung vanity with push-to-open soft-close drawers and an integrated ceramic basin. A contemporary centrepiece for the modern Australian bathroom.",
+    features:["Push-to-open soft-close","Integrated ceramic basin","Wall-hung (concealed fixings)","Moisture-resistant carcass","Under-basin cable management"],
+    price:1290, salePrice:null, unit:"each", stock:18, sku:"LOR-VAN-001", badge:"Bestseller",
+    images:[], colours:["Matte White","Concrete Grey","Navy"], sizes:["600mm","750mm","900mm","1200mm"], warranty:"10 years"
+  },
+  {
+    id:"van-002", active:true, category:"vanity",
+    name:"Nova Freestanding Vanity", subtitle:"900mm — Gunmetal & Oak",
+    description:"Striking two-tone freestanding vanity with a gunmetal frame and warm Australian oak drawer fronts. Pairs beautifully with our LED mirror range.",
+    features:["Powder-coated steel frame","Solid oak drawer fronts","Undermount stone basin","Soft-close Blum hardware","Plinth feet (adjustable)"],
+    price:2190, salePrice:1890, unit:"each (basin included)", stock:7, sku:"LOR-VAN-002", badge:"On Sale",
+    images:[], colours:["Gunmetal + Oak","Matte Black + Walnut"], sizes:["750mm","900mm","1200mm"], warranty:"10 years"
+  },
+  {
+    id:"van-003", active:true, category:"vanity",
+    name:"Cove Shaker Vanity", subtitle:"750mm — Satin White",
+    description:"Timeless shaker-style vanity with a traditional inset frame and Carrara-look stone top. Blends beautifully with classic and Hamptons-style interiors.",
+    features:["Inset shaker door & drawer","Carrara stone benchtop","Undermount basin","Soft-close hinges","Adjustable shelf inside"],
+    price:1590, salePrice:null, unit:"each", stock:12, sku:"LOR-VAN-003", badge:null,
+    images:[], colours:["Satin White","Sage Green","Duck Egg Blue"], sizes:["600mm","750mm","900mm"], warranty:"10 years"
+  },
+
+  /* ── LED MIRRORS ── */
+  {
+    id:"mir-001", active:true, category:"led-mirror",
+    name:"Lux Pro Backlit Mirror", subtitle:"900 × 700mm — Touch Dimmer",
+    description:"Hotel-grade backlit LED mirror with warm-to-cool colour temperature adjustment (2700K–6500K), built-in demister pad and 1-touch dimmer.",
+    features:["2700K–6500K colour temp","Touch-sensitive dimmer","Anti-fog demister pad","IP44 water resistant","Memory function (last setting)"],
+    price:649, salePrice:null, unit:"each", stock:31, sku:"LOR-MIR-001", badge:"Bestseller",
+    images:[], sizes:["600×700","750×700","900×700","1200×700"], warranty:"5 years"
+  },
+  {
+    id:"mir-002", active:true, category:"led-mirror",
+    name:"Arch Illuminated Mirror", subtitle:"500 × 900mm — Arched Frame",
+    description:"Architectural arched mirror with a warm-white LED halo. Makes a bold design statement in any bathroom or dressing room.",
+    features:["Warm-white 3000K halo","Solid aluminium frame","Hardwired or plug-in","Anti-reflective glass","Landscape or portrait mount"],
+    price:895, salePrice:749, unit:"each", stock:15, sku:"LOR-MIR-002", badge:"On Sale",
+    images:[], sizes:["500×900 Arch","700×700 Round","600×800 Rect"], warranty:"5 years"
+  },
+  {
+    id:"mir-003", active:true, category:"led-mirror",
+    name:"Smart Mirror with Display", subtitle:"900 × 700mm — Bluetooth + Clock",
+    description:"Next-generation smart mirror featuring a built-in LCD time/date display, Bluetooth speaker, touch controls and integrated USB charging port.",
+    features:["Bluetooth 5.0 speaker","LCD time & date display","USB-A charging port","Voice-control compatible","Smart home integration"],
+    price:1249, salePrice:null, unit:"each", stock:9, sku:"LOR-MIR-003", badge:"New",
+    images:[], sizes:["900×700","1200×700"], warranty:"5 years"
+  },
+
+  /* ── SMART TOILETS ── */
+  {
+    id:"tlt-001", active:true, category:"smart-toilets",
+    name:"AquaComfort S1", subtitle:"Integrated Bidet Toilet Suite",
+    description:"Entry-level smart toilet with integrated rear cleanse, front feminine wash, heated seat and warm-air dryer. Quick-release seat for easy cleaning.",
+    features:["Rear & front wash","Heated seat (3 levels)","Warm-air dryer","Soft-close lid","Quick-release seat"],
+    price:1890, salePrice:null, unit:"each", stock:14, sku:"LOR-TLT-001", badge:null,
+    images:[], colours:["Gloss White"], warranty:"5 years"
+  },
+  {
+    id:"tlt-002", active:true, category:"smart-toilets",
+    name:"AquaComfort S3 Pro", subtitle:"Wall-Faced Smart Suite",
+    description:"Mid-range wall-faced smart toilet with remote control, auto-flush sensor, adjustable spray pressure & temperature, night light and self-cleaning nozzle.",
+    features:["Auto-flush sensor","Remote control + app","Self-cleaning nozzle","Adjustable pressure/temp","Ambient night light"],
+    price:2990, salePrice:2490, unit:"each", stock:8, sku:"LOR-TLT-002", badge:"On Sale",
+    images:[], colours:["Gloss White","Matte White"], warranty:"7 years"
+  },
+  {
+    id:"tlt-003", active:true, category:"smart-toilets",
+    name:"AquaComfort S5 Elite", subtitle:"In-Wall Cistern Smart Toilet",
+    description:"Our flagship smart toilet featuring a concealed in-wall cistern, dual-function shower spray, voice-activated lid, UV self-sterilisation and premium rimless design.",
+    features:["Concealed in-wall cistern","UV self-sterilisation","Voice-activated lid","Rimless flush design","App + remote control"],
+    price:4990, salePrice:null, unit:"each", stock:4, sku:"LOR-TLT-003", badge:"Premium",
+    images:[], colours:["Gloss White","Matte Black"], warranty:"10 years"
+  }
+];
+
+const SITE_SETTINGS = {
+  currencySymbol:"A$",
+  freeShippingThreshold:500,
+  standardShippingRate:149,
+  gst:0.10,
+  deliveryNote:"Delivering Australia-wide · 3–7 business days metro · 7–14 regional"
+};
+
+/* ============================================================
+   SITE LOGIC — no need to edit below this line
+   ============================================================ */
+'use strict';
+const state={cart:JSON.parse(localStorage.getItem('lor_cart')||'[]'),wishlist:JSON.parse(localStorage.getItem('lor_wish')||'[]'),currentProduct:null,selectedVariants:{}};
+const fmt=n=>`${SITE_SETTINGS.currencySymbol}${Number(n).toLocaleString('en-AU',{minimumFractionDigits:0,maximumFractionDigits:0})}`;
+const badgeCls={"On Sale":"tag-sale","New":"tag-new","Popular":"tag-pop","Premium":"tag-prem","Bestseller":"tag-best"};
+
+function saveCart(){localStorage.setItem('lor_cart',JSON.stringify(state.cart))}
+function saveWish(){localStorage.setItem('lor_wish',JSON.stringify(state.wishlist))}
+
+function showToast(msg,icon='ti-check'){
+  const t=document.getElementById('toast');
+  t.innerHTML=`<i class="ti ${icon}"></i> ${msg}`;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3000);
+}
+
+function addToCart(productId,qty=1,variant=''){
+  const p=PRODUCTS.find(x=>x.id===productId);
+  if(!p||p.stock===0)return;
+  const key=`${productId}__${variant}`;
+  const existing=state.cart.find(i=>i.key===key);
+  const price=p.salePrice||p.price;
+  if(existing){existing.qty+=qty}else{state.cart.push({key,productId,qty,variant,price,name:p.name,subtitle:p.subtitle,image:p.images[0]||''})}
+  saveCart();renderCartCount();showToast(`${p.name} added to cart`,'ti-shopping-cart');
+}
+
+function removeFromCart(key){
+  state.cart=state.cart.filter(i=>i.key!==key);
+  saveCart();renderCartCount();renderCartItems();
+}
+
+function renderCartCount(){
+  const total=state.cart.reduce((s,i)=>s+i.qty,0);
+  const el=document.getElementById('cart-count');
+  el.textContent=total;
+  el.classList.toggle('visible',total>0);
+}
+
+function renderCartItems(){
+  const container=document.getElementById('cart-items');
+  if(state.cart.length===0){container.innerHTML='<div class="cart-empty"><i class="ti ti-shopping-cart"></i><p>Your cart is empty</p></div>';updateCartTotals();return}
+  container.innerHTML=state.cart.map(item=>`
+    <div class="cart-item">
+      <div class="cart-item-img"><i class="ti ti-photo" style="color:var(--c-silver);font-size:1.5rem"></i></div>
+      <div><div class="cart-item-name">${item.name}</div><div class="cart-item-sub">${item.variant||item.subtitle} · Qty ${item.qty}</div><span class="cart-item-remove" onclick="removeFromCart('${item.key}')">Remove</span></div>
+      <div class="cart-item-price">${fmt(item.price*item.qty)}</div>
+    </div>`).join('');
+  updateCartTotals();
+}
+
+function updateCartTotals(){
+  const subtotal=state.cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const shipping=subtotal>=SITE_SETTINGS.freeShippingThreshold||subtotal===0?0:SITE_SETTINGS.standardShippingRate;
+  const gst=subtotal*SITE_SETTINGS.gst;
+  const total=subtotal+shipping;
+  const sn=document.getElementById('shipping-note');
+  if(subtotal>0&&subtotal<SITE_SETTINGS.freeShippingThreshold){sn.textContent=`Add ${fmt(SITE_SETTINGS.freeShippingThreshold-subtotal)} more for free shipping!`;sn.style.display='block'}
+  else if(subtotal>=SITE_SETTINGS.freeShippingThreshold){sn.textContent='🎉 You qualify for free shipping!';sn.style.display='block'}
+  else{sn.style.display='none'}
+  document.getElementById('cart-subtotal').textContent=fmt(subtotal);
+  document.getElementById('cart-shipping').textContent=shipping===0?(subtotal===0?fmt(0):'FREE'):fmt(shipping);
+  document.getElementById('cart-gst').textContent=fmt(gst);
+  document.getElementById('cart-total').textContent=fmt(total);
+}
+
+function openCart(){document.getElementById('cart-sidebar').classList.add('open');document.getElementById('cart-backdrop').classList.add('visible');renderCartItems()}
+function closeCart(){document.getElementById('cart-sidebar').classList.remove('open');document.getElementById('cart-backdrop').classList.remove('visible')}
+
+function toggleWishlist(productId){
+  if(state.wishlist.includes(productId)){state.wishlist=state.wishlist.filter(id=>id!==productId);showToast('Removed from wishlist','ti-heart')}
+  else{state.wishlist.push(productId);showToast('Added to wishlist','ti-heart-filled')}
+  saveWish();
+  document.querySelectorAll(`.product-wishlist[data-id="${productId}"]`).forEach(b=>{
+    b.classList.toggle('active',state.wishlist.includes(productId));
+    b.querySelector('i').className=`ti ${state.wishlist.includes(productId)?'ti-heart-filled':'ti-heart'}`;
+  });
+}
+
+function renderProducts(category='all'){
+  const grid=document.getElementById('product-grid');
+  const filtered=PRODUCTS.filter(p=>p.active&&(category==='all'||p.category===category));
+  if(filtered.length===0){grid.innerHTML='<p style="color:var(--c-mist);text-align:center;grid-column:1/-1;padding:3rem">No products found.</p>';return}
+  grid.innerHTML=filtered.map((p,i)=>{
+    const price=p.salePrice||p.price;
+    const stock=p.stock===0?{text:'Out of Stock',low:false}:p.stock<=5?{text:`Only ${p.stock} left`,low:true}:null;
+    const wishlisted=state.wishlist.includes(p.id);
+    const cat=CATEGORIES[p.category];
+    const imgHtml=p.images&&p.images.length?`<img src="${p.images[0]}" alt="${p.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'product-img-placeholder\\'><i class=\\'ti ${cat?.icon||'ti-photo'}\\'></i><span>Image coming soon</span></div>'">`:`<div class="product-img-placeholder"><i class="ti ${cat?.icon||'ti-photo'}"></i><span>Image coming soon</span></div>`;
+    return `<article class="product-card animate-in" style="animation-delay:${i*0.05}s" onclick="openModal('${p.id}')">
+      <div class="product-img-wrap">
+        ${imgHtml}
+        ${p.badge?`<div class="product-badge"><span class="tag ${badgeCls[p.badge]||'tag-pop'}">${p.badge}</span></div>`:''}
+        ${stock?.low?`<div class="product-stock-low">${stock.text}</div>`:''}
+        <button class="product-wishlist ${wishlisted?'active':''}" data-id="${p.id}" onclick="event.stopPropagation();toggleWishlist('${p.id}')">
+          <i class="ti ${wishlisted?'ti-heart-filled':'ti-heart'}"></i>
+        </button>
+      </div>
+      <div class="product-info">
+        <div class="product-category">${cat?.label||p.category}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-subtitle">${p.subtitle}</div>
+        <div class="product-pricing">
+          <span class="price-current ${p.salePrice?'price-sale':''}">${fmt(price)}</span>
+          ${p.salePrice?`<span class="price-was">${fmt(p.price)}</span>`:''}
+          <span class="price-unit">${p.unit}</span>
+        </div>
+        <small class="price-gst">Inc. GST · ${SITE_SETTINGS.deliveryNote}</small>
+        <div class="product-actions">
+          <button class="btn-cart" onclick="event.stopPropagation();addToCart('${p.id}')" ${p.stock===0?'disabled':''}>
+            <i class="ti ti-shopping-cart"></i> ${p.stock===0?'Out of Stock':'Add to Cart'}
+          </button>
+          <button class="btn-view" onclick="event.stopPropagation();openModal('${p.id}')"><i class="ti ti-eye"></i></button>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function openModal(productId){
+  const p=PRODUCTS.find(x=>x.id===productId);
+  if(!p)return;
+  state.currentProduct=p;
+  const cat=CATEGORIES[p.category];
+  const price=p.salePrice||p.price;
+  const imgHtml=p.images&&p.images.length?`<img src="${p.images[0]}" id="modal-main-img" alt="${p.name}">`:`<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--c-snow)"><i class="ti ${cat?.icon||'ti-photo'}" style="font-size:4rem;color:var(--c-silver)"></i></div>`;
+  const thumbs=p.images&&p.images.length>1?p.images.map((img,i)=>`<div class="modal-thumb ${i===0?'active':''}" onclick="switchImage('${img}',this)"><img src="${img}" alt="thumb"></div>`).join(''):'';
+  const colorOpts=p.colours?.length?`<div class="modal-variant-group"><label>Colour</label><div class="variant-options">${p.colours.map((c,i)=>`<button class="variant-btn ${i===0?'active':''}" onclick="selectVariant(this,'colour','${c}')">${c}</button>`).join('')}</div></div>`:'';
+  const sizeOpts=p.sizes?.length?`<div class="modal-variant-group"><label>Size</label><div class="variant-options">${p.sizes.map((s,i)=>`<button class="variant-btn ${i===0?'active':''}" onclick="selectVariant(this,'size','${s}')">${s}</button>`).join('')}</div></div>`:'';
+  document.getElementById('product-modal').innerHTML=`
+    <button class="modal-close" onclick="closeModal()"><i class="ti ti-x"></i></button>
+    <div class="modal-gallery">
+      <div class="modal-gallery-main">${imgHtml}</div>
+      ${thumbs?`<div class="modal-gallery-thumbs">${thumbs}</div>`:''}
+    </div>
+    <div class="modal-details">
+      <div class="modal-cat"><i class="ti ${cat?.icon||'ti-tag'}"></i> ${cat?.label}</div>
+      <h2 class="modal-name">${p.name}</h2>
+      <p class="modal-sub">${p.subtitle}</p>
+      <div>
+        <span class="modal-price ${p.salePrice?'price-sale':''}">${fmt(price)}</span>
+        ${p.salePrice?`<span class="modal-price-was">${fmt(p.price)}</span>`:''}
+      </div>
+      <p class="modal-price-info">${p.unit} · Inc. GST · SKU: ${p.sku}</p>
+      <p class="modal-desc">${p.description}</p>
+      ${colorOpts}${sizeOpts}
+      <div class="qty-row">
+        <span class="qty-label">Qty</span>
+        <div class="qty-ctrl">
+          <button class="qty-btn" onclick="changeQty(-1)"><i class="ti ti-minus"></i></button>
+          <input class="qty-input" id="modal-qty" type="number" value="1" min="1" max="${p.stock}">
+          <button class="qty-btn" onclick="changeQty(1)"><i class="ti ti-plus"></i></button>
+        </div>
+      </div>
+      <div class="modal-features"><h4>Key Features</h4><ul>${p.features.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+      <div class="modal-meta">
+        <div class="modal-meta-item"><span>Warranty</span><span>${p.warranty}</span></div>
+        <div class="modal-meta-item"><span>Stock</span><span>${p.stock>0?`${p.stock} available`:'Out of stock'}</span></div>
+      </div>
+      <button class="btn-add-to-cart" onclick="modalAddToCart()" ${p.stock===0?'disabled':''}>
+        <i class="ti ti-shopping-cart"></i> ${p.stock===0?'Out of Stock':'Add to Cart'}
+      </button>
+      <div class="modal-warranty"><i class="ti ti-shield-check"></i> ${p.warranty} warranty · Australian stock · GST included</div>
+    </div>`;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeModal(){document.getElementById('modal-overlay').classList.remove('open');document.body.style.overflow=''}
+function switchImage(src,el){const m=document.getElementById('modal-main-img');if(m)m.src=src;document.querySelectorAll('.modal-thumb').forEach(t=>t.classList.remove('active'));el.classList.add('active')}
+function selectVariant(btn,type,value){btn.closest('.variant-options').querySelectorAll('.variant-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+function changeQty(delta){const input=document.getElementById('modal-qty');const max=state.currentProduct?.stock||1;input.value=Math.max(1,Math.min(max,parseInt(input.value)+delta))}
+function modalAddToCart(){const p=state.currentProduct;if(!p)return;const qty=parseInt(document.getElementById('modal-qty').value)||1;addToCart(p.id,qty)}
+function filterCategory(cat){document.querySelectorAll('.cat-tab').forEach(t=>t.classList.toggle('active',t.dataset.cat===cat));renderProducts(cat)}
+function handleNewsletter(e){e.preventDefault();const input=document.getElementById('nl-email');if(!input.value.includes('@'))return;showToast("Thank you! You're now subscribed.",'ti-mail');input.value=''}
+function goToCheckout(){if(state.cart.length===0){showToast('Your cart is empty','ti-alert-circle');return}showToast('Checkout coming soon — contact us to place your order!','ti-info-circle')}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  renderProducts('all');
+  renderCartCount();
+  window.addEventListener('scroll',()=>document.getElementById('site-header').classList.toggle('scrolled',window.scrollY>20),{passive:true});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeCart()}});
+});
+</script>
+</body>
+</html>
