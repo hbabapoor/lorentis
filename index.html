@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LORENTIS — Premium Bathrooms &amp; Cladding | Australia</title>
+  <meta name="description" content="LORENTIS delivers premium PVC cladding, designer vanities, LED mirrors and smart toilets direct to Australian homes. Free shipping on orders over A$500.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="LORENTIS — Premium Bathrooms &amp; Cladding">
+  <meta property="og:description" content="Premium Australian bathroom products. Designer vanities, smart toilets, LED mirrors and weatherboard cladding.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header id="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="LORENTIS home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M10 2 L18 7 L18 13 L10 18 L2 13 L2 7 Z" fill="none" stroke="#B8914A" stroke-width="1.5"/>
+            <circle cx="10" cy="10" r="3" fill="#B8914A"/>
+          </svg>
+        </div>
+        <div>
+          <span class="logo-text">LORENTIS</span>
+          <span class="logo-tagline">Australian Living</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#catalogue">Products</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="mailto:sales@lorentis.com.au">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button class="cart-btn" onclick="openCart()" aria-label="Shopping cart">
+          <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+          Cart
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section id="hero" aria-label="Hero banner">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Premium Australian Bathrooms</p>
+    <h1 class="hero-title">
+      Elevate your<br>
+      <em>living spaces</em><br>
+      effortlessly
+    </h1>
+    <p class="hero-sub">
+      From designer vanities and smart toilets to LED mirrors and premium PVC cladding — curated products for the modern Australian home. Shipped nationwide.
+    </p>
+    <div class="hero-ctas">
+      <a href="#catalogue" class="btn-primary">Shop All Products</a>
+      <a href="#why-us" class="btn-outline-light">Why LORENTIS</a>
+    </div>
+  </div>
+
+  <div class="hero-visual hero-visual-fallback" aria-hidden="true">
+    <!-- Replace with: <img src="images/hero/hero-bathroom.jpg" alt="Luxury bathroom"> -->
+  </div>
+
+  <!-- Stats strip overlapping hero bottom -->
+  <div class="hero-stat-strip" aria-label="Key statistics">
+    <div class="hero-stat">
+      <div class="hero-stat-num">500+</div>
+      <div class="hero-stat-label">Happy Customers</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">25yr</div>
+      <div class="hero-stat-label">Cladding Warranty</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">A$500</div>
+      <div class="hero-stat-label">Free Shipping</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">100%</div>
+      <div class="hero-stat-label">Aussie Stock</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ────────────────────────────────────────── -->
+<div id="trust-bar" role="complementary" aria-label="Trust indicators">
+  <div class="container">
+    <ul class="trust-items">
+      <li class="trust-item"><i class="ti ti-truck" aria-hidden="true"></i> Free Shipping over A$500</li>
+      <li class="trust-item"><i class="ti ti-shield-check" aria-hidden="true"></i> Australian Stock — No Waiting</li>
+      <li class="trust-item"><i class="ti ti-award" aria-hidden="true"></i> Manufacturer Warranty Included</li>
+      <li class="trust-item"><i class="ti ti-lock" aria-hidden="true"></i> Secure Checkout</li>
+      <li class="trust-item"><i class="ti ti-building-store" aria-hidden="true"></i> ABN 12 345 678 901</li>
+      <li class="trust-item"><i class="ti ti-phone" aria-hidden="true"></i> 1800 567 890</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── PRODUCT CATALOGUE ─────────────────────────────────── -->
+<section id="catalogue" aria-label="Product catalogue">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="gold-line" aria-hidden="true"></span>
+      <h2>Our Collections</h2>
+      <p>Handpicked products designed for the Australian climate and lifestyle, with more ranges being added regularly.</p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="cat-tabs" role="tablist" aria-label="Product categories">
+      <button class="cat-tab active" data-cat="all" role="tab" aria-selected="true" onclick="filterCategory('all')">
+        <i class="ti ti-layout-grid" aria-hidden="true"></i> All Products
+      </button>
+      <button class="cat-tab" data-cat="pvc-cladding" role="tab" aria-selected="false" onclick="filterCategory('pvc-cladding')">
+        <i class="ti ti-building" aria-hidden="true"></i> PVC Cladding
+      </button>
+      <button class="cat-tab" data-cat="vanity" role="tab" aria-selected="false" onclick="filterCategory('vanity')">
+        <i class="ti ti-droplet" aria-hidden="true"></i> Vanity Units
+      </button>
+      <button class="cat-tab" data-cat="led-mirror" role="tab" aria-selected="false" onclick="filterCategory('led-mirror')">
+        <i class="ti ti-brightness" aria-hidden="true"></i> LED Mirrors
+      </button>
+      <button class="cat-tab" data-cat="smart-toilets" role="tab" aria-selected="false" onclick="filterCategory('smart-toilets')">
+        <i class="ti ti-refresh" aria-hidden="true"></i> Smart Toilets
+      </button>
+    </div>
+
+    <!-- Product Grid - Populated by JS -->
+    <div class="product-grid" id="product-grid" role="list" aria-label="Products"></div>
+
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ─────────────────────────────────────── -->
+<section id="why-us" aria-label="Why choose LORENTIS">
+  <div class="container">
+    <div class="section-header">
+      <span class="gold-line" aria-hidden="true"></span>
+      <h2>Why Australians Choose LORENTIS</h2>
+      <p>We combine quality products, transparent pricing and genuine Australian customer service.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-certificate" aria-hidden="true"></i></div>
+        <h3>Manufacturer Warranties</h3>
+        <p>Every product ships with its full manufacturer warranty — from 5 years on LED mirrors to 25 years on PVC cladding.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-truck-delivery" aria-hidden="true"></i></div>
+        <h3>Nationwide Delivery</h3>
+        <p>We deliver to every Australian state and territory. Metro orders in 3–7 business days, regional in 7–14 days.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-headset" aria-hidden="true"></i></div>
+        <h3>Real Expert Support</h3>
+        <p>Speak to our Australian product experts by phone or email before you buy. We help you choose the right product.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-package" aria-hidden="true"></i></div>
+        <h3>Local Stock — No Delays</h3>
+        <p>All products are held in our Australian warehouse. No waiting weeks for overseas shipments or paying import duties.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-receipt-tax" aria-hidden="true"></i></div>
+        <h3>GST Inclusive Pricing</h3>
+        <p>Every price you see includes 10% GST. No surprises at checkout — what you see is exactly what you pay.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="ti ti-refresh" aria-hidden="true"></i></div>
+        <h3>Easy Returns</h3>
+        <p>Changed your mind? We offer hassle-free returns within 30 days on all stocked items in original condition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SHOWROOM / CONTACT ─────────────────────────────────── -->
+<section id="showroom" aria-label="Showroom information">
+  <div class="container">
+    <div class="showroom-inner">
+      <div class="showroom-text">
+        <span class="gold-line" aria-hidden="true"></span>
+        <h2>Visit Our Melbourne Showroom</h2>
+        <p>
+          See our products in person before you buy. Our Dandenong South showroom features full bathroom displays — vanities, mirrors, smart toilets and cladding all on display.
+        </p>
+        <ul class="showroom-details">
+          <li class="showroom-detail">
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            <span>Unit 4 / 28 Commerce Drive, Dandenong South VIC 3175</span>
+          </li>
+          <li class="showroom-detail">
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            <span>Mon–Fri 8am–5pm · Sat 9am–2pm · Closed Sunday</span>
+          </li>
+          <li class="showroom-detail">
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:1800567890">1800 567 890</a>
+          </li>
+          <li class="showroom-detail">
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:sales@lorentis.com.au">sales@lorentis.com.au</a>
+          </li>
+        </ul>
+        <a href="https://maps.google.com/?q=28+Commerce+Drive,+Dandenong+South+VIC" target="_blank" rel="noopener" class="btn-dark">
+          <i class="ti ti-map-2" aria-hidden="true"></i> Get Directions
+        </a>
+      </div>
+      <div class="showroom-img" role="img" aria-label="LORENTIS showroom display">
+        <!-- Image: images/brand/showroom.jpg -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+<section id="testimonials" aria-label="Customer testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="gold-line" aria-hidden="true"></span>
+      <h2>What Our Customers Say</h2>
+      <p>Real reviews from real Australians who've transformed their homes with LORENTIS.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testimonial-text">"The Aria vanity arrived perfectly packaged and looks even better in person than online. The quality is outstanding for the price. Installation was straightforward. Couldn't be happier."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">SK</div>
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-location">Brighton, VIC</div>
+            <div class="testimonial-product">Aria Wall-Hung Vanity 900mm</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testimonial-text">"We clad our entire Queenslander with the Timber Look V-Groove panels. The result is incredible — so realistic, and we haven't had to do a single thing to maintain them in 18 months."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">MR</div>
+          <div>
+            <div class="testimonial-name">Mark R.</div>
+            <div class="testimonial-location">Paddington, QLD</div>
+            <div class="testimonial-product">Timber Look V-Groove Panels</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testimonial-text">"The AquaComfort S3 Pro is an absolute game changer. Once you've used a bidet toilet you can never go back. The auto flush and night light are the little details that make a big difference."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">JT</div>
+          <div>
+            <div class="testimonial-name">James T.</div>
+            <div class="testimonial-location">Mosman, NSW</div>
+            <div class="testimonial-product">AquaComfort S3 Pro Smart Toilet</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testimonial-text">"The Lux Pro mirror completely transformed our ensuite. The colour temperature adjustment is perfect — warm light in the evenings, cool light for getting ready. Support team was super responsive too."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">AL</div>
+          <div>
+            <div class="testimonial-name">Amanda L.</div>
+            <div class="testimonial-location">Subiaco, WA</div>
+            <div class="testimonial-product">Lux Pro Backlit Mirror 900×700</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="4 stars">★★★★★</div>
+        <p class="testimonial-text">"Very impressed with how well the Shiplap Shadow Line cladding performs in a coastal environment. No warping, no cracking, still looking sharp. Love that we can paint it any colour we want."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">BM</div>
+          <div>
+            <div class="testimonial-name">Brett M.</div>
+            <div class="testimonial-location">Manly, NSW</div>
+            <div class="testimonial-product">Shiplap Shadow Line Cladding</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testimonial-text">"Ordered the Nova vanity and had a small transit damage issue. Lorentis sorted a replacement panel the very next day without any hassle. Great product and even better customer service."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">CP</div>
+          <div>
+            <div class="testimonial-name">Claire P.</div>
+            <div class="testimonual-location">Toorak, VIC</div>
+            <div class="testimonial-product">Nova Freestanding Vanity</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ─────────────────────────────────────────── -->
+<section id="newsletter" aria-label="Newsletter signup">
+  <div class="container">
+    <h2>Stay in the Loop</h2>
+    <p>New products, trade pricing and exclusive offers — delivered to your inbox. No spam, ever.</p>
+    <form class="newsletter-form" id="nl-form" novalidate>
+      <input type="email" id="nl-email" placeholder="your@email.com.au" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M10 2 L18 7 L18 13 L10 18 L2 13 L2 7 Z" fill="none" stroke="#B8914A" stroke-width="1.5"/>
+              <circle cx="10" cy="10" r="3" fill="#B8914A"/>
+            </svg>
+          </div>
+          <span class="logo-text">LORENTIS</span>
+        </div>
+        <p>Premium bathroom products and cladding systems for Australian homes. Quality you can trust, delivered nationwide.</p>
+        <p class="abn">ABN 12 345 678 901 · All prices include 10% GST</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="ti ti-brand-pinterest" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Houzz"><i class="ti ti-home-2" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#" onclick="filterCategory('pvc-cladding');return false;">PVC Cladding</a></li>
+          <li><a href="#" onclick="filterCategory('vanity');return false;">Vanity Units</a></li>
+          <li><a href="#" onclick="filterCategory('led-mirror');return false;">LED Mirrors</a></li>
+          <li><a href="#" onclick="filterCategory('smart-toilets');return false;">Smart Toilets</a></li>
+          <li><a href="#catalogue">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why-us">About Us</a></li>
+          <li><a href="#showroom">Our Showroom</a></li>
+          <li><a href="#testimonials">Customer Reviews</a></li>
+          <li><a href="mailto:sales@lorentis.com.au">Contact Us</a></li>
+          <li><a href="#">Trade Enquiries</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Warranty Claims</a></li>
+          <li><a href="#">Installation Guides</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Sale</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 LORENTIS Pty Ltd · All rights reserved · ABN 12 345 678 901</p>
+      <p>
+        <a href="#">Privacy</a> ·
+        <a href="#">Terms</a> ·
+        <a href="#">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── PRODUCT MODAL ─────────────────────────────────────── -->
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-label="Product details">
+  <div id="product-modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close product modal">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <!-- Populated by JS -->
+  </div>
+</div>
+
+<!-- ── CART BACKDROP ─────────────────────────────────────── -->
+<div class="cart-backdrop" id="cart-backdrop" onclick="closeCart()" aria-hidden="true"></div>
+
+<!-- ── CART SIDEBAR ──────────────────────────────────────── -->
+<aside id="cart-sidebar" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2><i class="ti ti-shopping-cart" aria-hidden="true"></i> Your Cart</h2>
+    <button onclick="closeCart()" aria-label="Close cart">
+      <i class="ti ti-x" style="font-size:1.25rem;color:var(--c-stone)"></i>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cart-items" role="list">
+    <div class="cart-empty">
+      <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+
+  <div class="cart-footer">
+    <p class="cart-shipping-note" id="shipping-note" style="display:none;font-size:.8rem;color:var(--c-success);margin-bottom:.75rem"></p>
+    <div class="cart-totals">
+      <div class="cart-total-row"><span>Subtotal</span><span id="cart-subtotal">A$0</span></div>
+      <div class="cart-total-row"><span>Shipping</span><span id="cart-shipping">A$0</span></div>
+      <div class="cart-total-row"><span>GST (included)</span><span id="cart-gst">A$0</span></div>
+      <div class="cart-total-row grand"><span>Total (AUD)</span><span id="cart-total">A$0</span></div>
+    </div>
+    <button class="btn-checkout" onclick="goToCheckout()">
+      <i class="ti ti-lock" aria-hidden="true"></i> Secure Checkout
+    </button>
+    <p class="cart-secure">
+      <i class="ti ti-shield-check" aria-hidden="true"></i>
+      SSL encrypted · Safe &amp; secure payment
+    </p>
+  </div>
+</aside>
+
+<!-- ── TOAST NOTIFICATION ─────────────────────────────────── -->
+<div id="toast" role="status" aria-live="polite">
+  <i class="ti ti-check" aria-hidden="true"></i> Item added
+</div>
+
+<!-- ── SCRIPTS ───────────────────────────────────────────── -->
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
